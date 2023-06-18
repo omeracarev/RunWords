@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/palette4"
+    android:orientation="vertical"
+    android:weightSum="20"
+    tools:context=".Dictionary">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/leftar2"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/roundbackground4"
+            android:src="@drawable/ic_menuico">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/choosertext2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="7"
+            android:background="@drawable/roundbackground4"
+            android:gravity="center"
+            android:padding="10dp"
+            android:fontFamily="@font/didact_gothic"
+            android:text="Sözlük"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/rightar2"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/roundbackground4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_arrow_right">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewDict"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        app:iconifiedByDefault="false"
+        style="@style/CustomSearchView"
+        app:queryHint="500 Kelime içinden Arayın..."
+        />
+
+     <GridView
+         android:id="@+id/dictgrid"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="15.5"
+         android:horizontalSpacing="6dp"
+         android:verticalSpacing="6dp"
+         android:numColumns="2"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/runnych">
+
+        <LinearLayout
+            android:id="@+id/findletter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

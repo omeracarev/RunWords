@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:background="@color/palette3"
+    tools:context=".RoomedAct">
+
+    <!-- userTitle -->
+
+    <TextView
+        android:id="@+id/userTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/roundbackgroundmes"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/didact_gothic"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="15dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/palette4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardCornerRadius="10dp"
+        android:layout_weight="6.5">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="20">
+
+            <ScrollView
+                android:id="@+id/scrollroomed"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addMesScroll"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:weightSum="20"
+                android:id="@+id/messageboxlay"
+                android:orientation="horizontal">
+
+                <EditText
+
+                    android:inputType="text"
+                    android:id="@+id/messagebox"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="17"
+                    android:layout_marginStart="2.5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="#EAE7E7"
+                    android:hint="Buraya Yazın..."
+                    android:paddingStart="10dp"
+                    android:fontFamily="@font/didact_gothic"
+                    android:textStyle="bold"
+                    android:background="@drawable/roundbackgroundmes"
+                    />
+
+                <ImageView
+                    android:id="@+id/sendmesimg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:src="@drawable/ic_sendmes"/>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="15dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/palette4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardCornerRadius="10dp"
+        android:layout_weight="5">
+
+        <LinearLayout
+            android:weightSum="20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/engwordroom"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:fontFamily="@font/didact_gothic"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text=""
+                android:letterSpacing="0.05"
+                android:gravity="center"
+                android:textSize="35sp"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:background="@drawable/roundbackgroundmes"
+                android:id="@+id/playsoundroom"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:padding="10dp"
+                android:src="@drawable/ic_volumewhite"/>
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_gravity="center"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:background="@drawable/roundbackgroundmes"
+                android:text="Status"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/didact_gothic"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1room"
+                android:layout_margin="15dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/palette4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/chose1room"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/didact_gothic"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:letterSpacing="0.03"
+                    android:gravity="center"
+                    android:textSize="25sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2room"
+                android:layout_margin="15dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/palette4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/chose2room"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/didact_gothic"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:letterSpacing="0.03"
+                    android:gravity="center"
+                    android:textSize="25sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3room"
+                android:layout_margin="15dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/palette4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/chose3room"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/didact_gothic"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:letterSpacing="0.03"
+                    android:gravity="center"
+                    android:textSize="25sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4room"
+                android:layout_margin="15dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/palette4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/chose4room"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/didact_gothic"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text=""
+                    android:letterSpacing="0.03"
+                    android:gravity="center"
+                    android:textSize="25sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/exitRoom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:background="@drawable/roundbackground2"
+            android:text="Odadan Ayrıl"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/didact_gothic"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

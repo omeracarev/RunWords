@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/palette4"
+    app:cardCornerRadius="20dp"
+
+    app:cardUseCompatPadding="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/leveluppoplay"
+        android:weightSum="20">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#6200EA"
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:background="@drawable/palette4bg"
+                    android:id="@+id/mainrunnylup"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/ic_runwords"/>
+
+                <TextView
+                    android:id="@+id/helpidletextlup"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/didact_gothic"
+                    android:text="Tebrikler!"/>
+
+                <ImageView
+                    android:id="@+id/helprunnlup"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/palette4bg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/ic_correct"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:background="@drawable/roundbackground4"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/didact_gothic"
+            android:textStyle="bold"
+            android:elevation="10dp"
+            android:textSize="40sp"
+            android:id="@+id/hedeftextlup"
+            android:text="10 Doğru Hedefi\nTamamlandı!"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:elevation="10dp"
+            android:background="@drawable/roundbackground2"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/didact_gothic"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:id="@+id/nexthedeflup"
+            android:text="Sıradaki Hedef : 20 Doğru"
+            android:textColor="@color/white"
+            />
+
+
+
+            <TextView
+                android:id="@+id/devamlup"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:textColor="@color/white"
+                android:background="@drawable/roundbackground3"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:elevation="10dp"
+                android:fontFamily="@font/didact_gothic"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:text="Alıştırmaya Dön"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

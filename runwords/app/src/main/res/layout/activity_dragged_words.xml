@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:id="@+id/maindragwords"
+    android:background="@color/palette3"
+    tools:context=".DraggedWords">
+
+
+    <LinearLayout
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/leftardg"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/roundbackground"
+            android:src="@drawable/ic_menuico">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/choosertextdg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="7"
+            android:background="@drawable/roundbackground"
+            android:gravity="center"
+            android:padding="10dp"
+            android:fontFamily="@font/didact_gothic"
+            android:text="Harfleri Sürükle"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/rightardg"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/roundbackground"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_arrow_right">
+
+        </ImageView>
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="15dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/palette4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardCornerRadius="10dp"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:weightSum="20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="#6200EA"
+                android:layout_weight="7">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_margin="5dp"
+                        android:background="@drawable/palette4bg"
+                        android:id="@+id/mainrunnydg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:src="@drawable/ic_runwords"/>
+
+                    <TextView
+                        android:id="@+id/helpidletextdg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/didact_gothic"
+                        android:text="Arkadaşlarınla Oynamak İçin Dokun! ===>"/>
+
+                    <ImageView
+                        android:id="@+id/helprunndg"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/palette4bg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:src="@drawable/ic_touch"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/mainengworddg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:fontFamily="@font/didact_gothic"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Türkçesi"
+                android:letterSpacing="0.05"
+                android:gravity="center"
+                android:textSize="35sp"/>
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:background="@drawable/roundbackground"
+                android:id="@+id/playsounddg"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:src="@drawable/ic_volumewhite"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="#6200EA">
+
+        <LinearLayout
+            android:id="@+id/engwordtamidg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="#e9c670">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/harflaydg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/harflay2dg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="15dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/palette4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardCornerRadius="10dp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="9">
+
+            <ImageView
+                android:id="@+id/correctimdg"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_correct"/>
+
+            <TextView
+                android:id="@+id/corscoredg"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/didact_gothic"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="x0"
+                android:letterSpacing="0.05"
+                android:gravity="center"
+                android:textSize="25sp"
+                />
+
+
+            <ImageView
+                android:id="@+id/wrongimdg"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_wrong"/>
+
+            <TextView
+                android:id="@+id/wrongscoredg"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/didact_gothic"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="x0"
+                android:letterSpacing="0.05"
+                android:gravity="center"
+                android:textSize="25sp"
+                />
+
+            <ImageView
+                android:background="@drawable/roundbackground"
+                android:id="@+id/runnyimdg"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_runwords"/>
+
+            <TextView
+                android:id="@+id/runnyscoredg"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/didact_gothic"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="x0"
+                android:letterSpacing="0.05"
+                android:gravity="center"
+                android:textSize="25sp"
+                />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:cardElevation="10dp"
+    android:id="@+id/menupopmainlay"
+    app:cardCornerRadius="15dp"
+    app:cardUseCompatPadding="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="20"
+
+        android:padding="10dp"
+        android:background="@color/palette4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:padding="10dp"
+            android:layout_weight="2.5">
+
+            <ImageView
+                android:id="@+id/runimsta"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/roundbackground"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/ic_runwords"
+                android:padding="3dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/runimhaktext"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/didact_gothic"
+                    android:background="@drawable/roundbackground2"
+                    android:layout_marginBottom="3dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="WinRunny Hakkın Yok..."/>
+
+                <TextView
+                    android:id="@+id/runimcounter"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/didact_gothic"
+                    android:background="@drawable/roundbackground4"
+                    android:layout_margin="0dp"
+                    android:elevation="5dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="Kalan Süre : 10:00:00"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_weight="14.25"
+                android:weightSum="6"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/roundbgtrans">
+
+                    <TextView
+                        android:padding="10dp"
+                        android:id="@+id/menupop1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:text="Sözlük Kullan"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/didact_gothic"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/roundbgtrans3">
+
+                    <TextView
+                        android:padding="10dp"
+                        android:id="@+id/menupop2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:text="Anlamını Bul"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/didact_gothic"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/roundbgtrans4">
+
+                    <TextView
+                        android:padding="10dp"
+                        android:id="@+id/menupop3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="30sp"
+                        android:text="Eş Anlamını Bul"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/didact_gothic"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/roungbgtrans2">
+
+                    <TextView
+                        android:padding="10dp"
+                        android:id="@+id/menupop4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="30sp"
+                        android:text="Zıt Anlamını Bul"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/didact_gothic"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/roundbackground4">
+
+                    <TextView
+                        android:padding="10dp"
+                        android:id="@+id/menupop5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="30sp"
+                        android:text="Düzensiz Fiiller"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/didact_gothic"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/roundbackground3">
+
+                    <TextView
+                        android:padding="10dp"
+                        android:id="@+id/menupop6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="30sp"
+                        android:text="Harfleri Sürükle"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/didact_gothic"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.75"
+            android:id="@+id/staticgor"
+            android:text="İstatistikleri Gör"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_margin="2dp"
+            android:background="@drawable/roundbackground"
+            android:textColor="@color/white"
+            android:fontFamily="@font/didact_gothic"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:id="@+id/dismisspopupmenu"
+            android:text="Menüyü Kapat"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/roundbackground2"
+            android:textColor="@color/white"
+            android:fontFamily="@font/didact_gothic"
+            android:textSize="25sp"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

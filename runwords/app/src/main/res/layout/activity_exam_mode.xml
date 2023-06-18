@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/palette4bg"
+    android:weightSum="20"
+    tools:context=".ExamMode">
+
+    <LinearLayout
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/leftarex"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/roundbackground"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_left">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/choosertextex"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="7"
+            android:background="@drawable/roundbackground"
+            android:gravity="center"
+            android:padding="10dp"
+            android:fontFamily="@font/didact_gothic"
+            android:text="Reading"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/rightarex"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/roundbackground"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_arrow_right">
+
+        </ImageView>
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/serveruser"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:background="@drawable/palette4bg"
+                android:id="@+id/mainrunnyex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:src="@drawable/ic_runwords"/>
+
+            <TextView
+                android:id="@+id/helpidletextex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/didact_gothic"
+                android:text="Soruyu Türkçeye Çevirebilirsin ===>"/>
+
+            <ImageView
+                android:id="@+id/helprunnex"
+                android:layout_margin="5dp"
+                android:background="@drawable/palette4bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:src="@drawable/ic_touch"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="15dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/palette3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardCornerRadius="10dp"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:id="@+id/texfielder"
+                android:weightSum="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/textfielder1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="Word1"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="--------"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/roundbackground3"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/textfielder2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="Word2"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:id="@+id/textfielder3"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="--------"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/roundbackground3"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:text="Word1"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/roundbackground"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:id="@+id/playSoundEx"
+                android:src="@drawable/ic_volumewhite"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.5"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1ex"
+                android:layout_margin="15dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/serveruser"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/chose1ex"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/didact_gothic"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="English Word"
+                    android:letterSpacing="0.03"
+                    android:gravity="center"
+                    android:textSize="25sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2ex"
+                android:layout_margin="15dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/serveruser"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/chose2ex"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/didact_gothic"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="English Word"
+                    android:letterSpacing="0.03"
+                    android:gravity="center"
+                    android:textSize="25sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3ex"
+                android:layout_margin="15dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/serveruser"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/chose3ex"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/didact_gothic"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="English Word"
+                    android:letterSpacing="0.03"
+                    android:gravity="center"
+                    android:textSize="25sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4ex"
+                android:layout_margin="15dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/serveruser"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/chose4ex"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/didact_gothic"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="English Word"
+                    android:letterSpacing="0.03"
+                    android:gravity="center"
+                    android:textSize="25sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/exitRoom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:background="@drawable/roundbackground2"
+            android:text="Sınav Modundan Ayrıl"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/didact_gothic"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

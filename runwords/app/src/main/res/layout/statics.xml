@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/palette4"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="20dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="20"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/stattext"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:letterSpacing="0.03"
+            android:text="İstatistikler"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/didact_gothic"
+            android:textSize="20sp"
+            android:background="@drawable/roundbackground"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="16"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:id="@+id/scrolay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#6200EA">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ImageView
+                            android:layout_margin="5dp"
+                            android:background="@drawable/palette4bg"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:src="@drawable/ic_winner"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8.5"
+                            android:weightSum="3"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:text="Şimdiye Kadar Olan Başarı Oranı"
+                                android:textColor="#6200EA"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.03"
+                                android:fontFamily="@font/didact_gothic"
+                                android:textSize="16sp"
+                                android:background="@drawable/palette4bg"/>
+
+                            <RatingBar
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:progressTint="#FFD600"
+                                android:progressBackgroundTint="#70FFE45A"
+                                android:numStars="5"
+                                android:stepSize="0.5"
+                                android:isIndicator="true"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#6200EA">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ImageView
+                            android:layout_margin="5dp"
+                            android:background="@drawable/palette4bg"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:src="@drawable/ic_correct"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8.5"
+                            android:weightSum="3"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:text="Tüm Zamanların Doğru Bilinen Kelime Sayısı"
+                                android:textColor="#6200EA"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.03"
+                                android:fontFamily="@font/didact_gothic"
+                                android:textSize="16sp"
+                                android:background="@drawable/palette4bg"/>
+
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="290 Kelime"
+                                android:textColor="#6200EA"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.03"
+                                android:fontFamily="@font/didact_gothic"
+                                android:textSize="18sp"
+                                android:background="@drawable/palette4bg"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#6200EA">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ImageView
+                            android:layout_margin="5dp"
+                            android:background="@drawable/palette4bg"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:src="@drawable/ic_wrong"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8.5"
+                            android:weightSum="3"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:text="Tüm Zamanların Yanlış Bilinen Kelime Sayısı"
+                                android:textColor="#6200EA"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.03"
+                                android:fontFamily="@font/didact_gothic"
+                                android:textSize="16sp"
+                                android:background="@drawable/palette4bg"/>
+
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="550 Kelime"
+                                android:textColor="#6200EA"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.03"
+                                android:fontFamily="@font/didact_gothic"
+                                android:textSize="18sp"
+                                android:background="@drawable/palette4bg"/>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#6200EA">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ImageView
+                            android:layout_margin="5dp"
+                            android:background="@drawable/palette4bg"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:src="@drawable/ic_runwords150"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8.5"
+                            android:weightSum="3"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:text="Tüm Zamanların Kullanılan Runny Sayısı"
+                                android:textColor="#6200EA"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.03"
+                                android:fontFamily="@font/didact_gothic"
+                                android:textSize="16sp"
+                                android:background="@drawable/palette4bg"/>
+
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="5 Kez"
+                                android:textColor="#6200EA"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.03"
+                                android:fontFamily="@font/didact_gothic"
+                                android:textSize="18sp"
+                                android:background="@drawable/palette4bg"/>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="#6200EA">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ImageView
+                            android:layout_margin="5dp"
+                            android:background="@drawable/palette4bg"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:src="@drawable/ic_stopwatch"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8.5"
+                            android:weightSum="3"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:text="Tüm Zamanların Toplam Çalışma Süresi"
+                                android:textColor="#6200EA"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.03"
+                                android:fontFamily="@font/didact_gothic"
+                                android:textSize="16sp"
+                                android:background="@drawable/palette4bg"/>
+
+                            <TextView
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="120 dakika"
+                                android:textColor="#6200EA"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:letterSpacing="0.03"
+                                android:fontFamily="@font/didact_gothic"
+                                android:textSize="18sp"
+                                android:background="@drawable/palette4bg"/>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/backcal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:letterSpacing="0.03"
+            android:text="Çalışmaya Dön"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="@font/didact_gothic"
+            android:textSize="20sp"
+            android:background="@drawable/roundbackground2"/>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

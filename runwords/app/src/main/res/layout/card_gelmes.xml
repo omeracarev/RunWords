@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#564ea1"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/cardgelmeslin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/gelmesimg"
+            android:layout_gravity="center_vertical|start"
+            android:layout_margin="3dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_runwords"/>
+
+        <TextView
+            android:paddingEnd="5dp"
+            android:id="@+id/gelmestext"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/didact_gothic"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical|end"
+            android:textColor="@color/white"
+            android:text="Testdfdfdfdfdfdfdfbjbjbj\nbjbjbjbjbdfdfdfdfdf"/>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

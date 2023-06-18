@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "659272171116",
+    "project_id": "runword-97c9d",
+    "storage_bucket": "runword-97c9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659272171116:android:8d5db06c0d4da24860a249",
+        "android_client_info": {
+          "package_name": "org.newest.runwords"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659272171116-o226q1tslava656at12rhdkim65ack7g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.newest.runwords",
+            "certificate_hash": "d55b9a128c28b58b967374529e4f1a0fc1188e30"
+          }
+        },
+        {
+          "client_id": "659272171116-ot2tcmig9jq4605impnuag7uahsjsitd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQYhoB9kppRthJOtQ-TjiviRU-Eqpiv3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659272171116-ot2tcmig9jq4605impnuag7uahsjsitd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

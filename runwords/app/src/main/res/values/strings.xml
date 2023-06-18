@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RunWords</string>
+    <string name="cards">cards</string>
+    <string name="bastex">bastex</string>
+    <string name="runnych">runnych</string>
+    <string name="focused">focused</string>
+    <string name="otherspl">other</string>
+    <string name="iscorrect">iscorrect</string>
+    <string name="trmean">trmean</string>
+    <string name="wintext">wintext</string>
+</resources>

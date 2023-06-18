@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    android:layout_gravity="center_vertical|end"
+    app:cardBackgroundColor="#3674d4"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="1dp"
+        android:id="@+id/cardsendmeslin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:paddingStart="5dp"
+            android:id="@+id/sendmestext"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/didact_gothic"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:text="ısjdısjfıdjfddfjıdjfıjdıfjdıjf"/>
+
+        <ImageView
+            android:id="@+id/sendmesimg"
+            android:layout_gravity="center_vertical|end"
+            android:layout_margin="3dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_reverserunny"/>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
